@@ -1,0 +1,71 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 200px;
+    padding-left: 50px;
+}
+
+.links, .contact {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact i {
+    margin-right: 7px;
+}
+
+.links li, .contact li {
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.links a, .contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.project {
+    padding-left: 20px;
+}
+
+.links a {
+    color: gray;
+}
+
+.greeting {
+    font-size: 15px;
+    font-weight: normal;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.7px;
+}
+
+.flower {
+    color: #a64453;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mouth {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+:global .active {
+    margin-left: -11.5px;
+}
+
+:global .active {
+    color: black !important;
+}
+
+:global .active::before {
+    content: "• ";
+    margin-right: 4px;
+}
+
+

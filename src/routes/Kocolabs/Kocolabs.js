@@ -6,7 +6,7 @@ export default class Kocolabs extends Component {
     render() {
         return (
             <div>
-                <h1>Kocolabs</h1>
+                
             </div>
         );
     }

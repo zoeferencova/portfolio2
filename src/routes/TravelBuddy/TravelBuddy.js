@@ -6,7 +6,7 @@ export default class TravelBuddy extends Component {
     render() {
         return (
             <div>
-                <h1>TravelBuddy</h1>
+                
             </div>
         );
     }

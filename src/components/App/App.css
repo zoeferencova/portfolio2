@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+
 .App {
+  font-family: 'Assistant';
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
+
+.blue {
+  background-color: #e9f2f2;
+  transition: 1s;
+}
+
+.yellow {
+  background-color: #f7f7eb;
+  transition: 1s;
+}
+
+.green {
+  background-color: #ebf2eb;
+  transition: 1s;
+}
+
+.indigo {
+  background-color: #e9eaf5;
+  transition: 1s;
+}
+
+.white {
+  background-color: #fcfcf7;
+  transition: 1s;
+}
+
+
