@@ -1,4 +1,9 @@
 .main {
-    width: 100%;
     display: flex;
+    left: 210px;
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }

@@ -2,8 +2,6 @@
 
 .App {
   font-family: 'Assistant';
-  display: flex;
-  flex-direction: row;
   box-sizing: border-box;
 }
 

@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.travelbuddy {
+    display: block;
+    height: 375px;
+    margin-left: 80px;
+    margin-top: 120px;
+}
+
+.kocolabs {
+    display: block;
+    height: 250px;
+    margin-top: 430px;
+    margin-left: -170px;
+}
+
+.coordinator {
+    display: block;
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 350px;
+}
