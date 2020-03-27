@@ -4,12 +4,18 @@ import styles from './Sidebar.module.css';
 import shared from '../../utils/Shared.module.css';
 
 export default class Sidebar extends Component {
+    state = {
+        expanded: false
+    }
+
     render() {
         return (
             <div className={styles.nav}>
                 <header>
                     <h1 className={styles.greeting}>Hello (<span className={styles.flower}>❀</span>・<span className={styles.mouth}>∀</span>・)ノ゛ <br></br><br></br>I'm Zoe Ferencova, a web developer.</h1>
                 </header>
+                <span className={styles.menu} onClick={e => !this.state.expanded ? this.setState({ expanded: true }) : this.setState({ expanded: false })}>Menu {!this.state.expanded && <span className={styles.arrow}>▽</span>}{this.state.expanded && <span className={styles.arrow}>△</span>}</span>
+                <div className={`${styles.info} ${this.state.expanded ? styles.show : ''}`}>
                 <ul className={styles.links}>
                     <li><NavLink exact to='/'>Projects</NavLink></li>
                     <li className={styles.project}><NavLink to='/coordinator'>Coordinator Tool</NavLink></li>
@@ -26,6 +32,7 @@ export default class Sidebar extends Component {
                         <li><a target="_blank" rel="noopener noreferrer"  href=""><i className="fas fa-file"></i> Resume</a></li>
                     </ul>
                 </address>
+                </div>
             </div>
         );
     }

@@ -1,25 +1,117 @@
 .container {
     display: flex;
     padding: 20px;
+    overflow-x: scroll;
 }
 
 .travelbuddy {
-    display: block;
-    height: 375px;
-    margin-left: 80px;
-    margin-top: 120px;
+    display: table;
+    margin-top: 10%;
+    margin-right: 5%;
 }
 
+
 .kocolabs {
-    display: block;
-    height: 250px;
-    margin-top: 430px;
-    margin-left: -170px;
+    display: table;
+    margin-top: 38%;
+    margin-left: -17%;
+    margin-right: 6%;
 }
 
 .coordinator {
+    display: table;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+.coordinator img, .kocolabs img, .travelbuddy img {
+    display: table-row;
+    opacity: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.travelbuddy img:hover, .kocolabs img:hover, .coordinator img:hover {
+    opacity: 20%;
+    transition: 0.7s;
+    cursor: url('../../images/eye.png'), auto;
+}
+
+.travelbuddy:hover .projectName, .kocolabs:hover .projectName, .coordinator:hover .projectName {
+    opacity: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.kocolabs, .travelbuddy, .coordinator {
+    position: relative;
+    text-align: center;
+    opacity: 100%;
+    transition: opacity 1s ease-in;
+}
+
+.projectName {
     display: block;
-    margin-top: 20px;
-    margin-left: 60px;
-    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    opacity: 0%;
+    transition: opacity 0.5s ease-in-out;
+    padding: 6px;
+}
+
+.projectName a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .coordinator {
+        margin: 30px;
+        width: 60%;
+    }
+
+    .travelbuddy {
+        margin: 30px auto;
+        width: 50%;
+    }
+
+    .kocolabs {
+        width: 25%;
+        margin: 120px 20px 20px 50px;
+    }
+}
+
+@media only screen and (max-width: 1118px) {
+    .coordinator {
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    .kocolabs {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .coordinator, .kocolabs, .travelbuddy {
+        margin: 0px 40px 40px 40px;
+        width: 70%;
+    }
+
+    .travelbuddy {
+        margin-bottom: 50px;
+    }  
 }
