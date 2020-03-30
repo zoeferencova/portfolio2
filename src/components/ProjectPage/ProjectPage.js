@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './ProjectPage.module.css';
-import './projects-css/kocolabs.css';
-import './projects-css/travelbuddy.css';
-import './projects-css/coordinator.css';
+import './kocolabs.css';
+import './travelbuddy.css';
+import './coordinator.css';
 import shared from '../../utils/Shared.module.css';
 
 export default class ProjectPage extends Component {
