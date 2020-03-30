@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import projects from '../../utils/project-data';
 import styles from './Sidebar.module.css';
 import shared from '../../utils/Shared.module.css';
 
 export default class Sidebar extends Component {
     state = {
         expanded: false
+    }
+
+    makeNavLinks() {
+        return projects.map(project => {
+            return <li className={styles.project} key={project.code}><NavLink to={`/${project.code}`}>{project.title}</NavLink></li>
+        })
     }
 
     render() {
@@ -18,9 +25,7 @@ export default class Sidebar extends Component {
                 <div className={`${styles.info} ${this.state.expanded ? styles.show : ''}`}>
                 <ul className={styles.links}>
                     <li><NavLink exact to='/'>Projects</NavLink></li>
-                    <li className={styles.project}><NavLink to='/coordinator'>Coordinator Tool</NavLink></li>
-                    <li className={styles.project}><NavLink to='/travelbuddy'>TravelBuddy</NavLink></li>
-                    <li className={styles.project}><NavLink to='/kocolabs'>Kocolabs</NavLink></li>
+                    {this.makeNavLinks()}
                     <li><NavLink to='/about'>About Me</NavLink></li>
                 </ul>
                 <address>
