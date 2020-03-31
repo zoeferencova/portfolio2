@@ -29,7 +29,7 @@ class App extends Component {
 
   makeProjectRoutes() {
     const routes = projects.map(project => {
-      return <Route key={project.code} path={`/${project.code}`} render={(props) => <ProjectPage {...props} code={project.code} title={project.title} description={project.description} images={project.images} techstack={project.techstack} next={project.next} />}/> 
+      return <Route key={project.code} path={`/${project.code}`} render={(props) => <ProjectPage {...props} code={project.code} logo={project.logo} description={project.description} images={project.images} techstack={project.techstack} links={project.links} next={project.next} />}/> 
     })
 
     return routes;
