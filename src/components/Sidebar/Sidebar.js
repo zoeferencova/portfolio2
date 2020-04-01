@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
 
     makeNavLinks() {
         return projects.map(project => {
-            return <li className={styles.project} key={project.code}><NavLink to={`/${project.code}`}>{project.title}</NavLink></li>
+            return <li className={styles.project} key={project.code} onClick={e => this.setState({ expanded: false })}><NavLink to={`/${project.code}`}>{project.title}</NavLink></li>
         })
     }
 
@@ -24,9 +24,9 @@ export default class Sidebar extends Component {
                 <span className={styles.menu} onClick={e => !this.state.expanded ? this.setState({ expanded: true }) : this.setState({ expanded: false })}>Menu {!this.state.expanded && <span className={styles.arrow}>▽</span>}{this.state.expanded && <span className={styles.arrow}>△</span>}</span>
                 <div className={`${styles.info} ${this.state.expanded ? styles.show : ''}`}>
                 <ul className={styles.links}>
-                    <li><NavLink exact to='/'>Projects</NavLink></li>
+                    <li onClick={e => this.setState({ expanded: false })}><NavLink exact to='/'>Projects</NavLink></li>
                     {this.makeNavLinks()}
-                    <li><NavLink to='/about'>About Me</NavLink></li>
+                    <li onClick={e => this.setState({ expanded: false })}><NavLink to='/about'>About Me</NavLink></li>
                 </ul>
                 <address>
                     <ul className={styles.contact}>

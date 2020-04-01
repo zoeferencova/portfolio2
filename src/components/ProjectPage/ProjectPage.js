@@ -62,28 +62,31 @@ export default class ProjectPage extends Component {
         return (
             <ScrollAnimation animateIn="fadeIn">
             <div className={`${this.props.code} ${styles.main}`}>
+                <Link to={this.props.next} className={`${styles.next} ${styles.nextMobile}`}>Next Project →</Link>          
+                <div className={`${styles.links} ${styles.linksMobile}`}>
+                    <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
+                </div>
                 <div className={`${styles.images} images`}>
                     {this.makeImages()}
                 </div>    
                 <div className={styles.info}>
-                    <header className={styles.logo}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i class="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} />}</header>
                     <div className={styles.text}>
                         <div className={`${styles.details} details`}>
                             <div className={`${styles.description} description`}>
+                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i class="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} />}</header>
                                 {this.props.description}
                             </div>
                             <div className={`${styles.techstack} techstack`}>
                                 {this.makeTechStack()}
                             </div>
                         </div>
-
-                        <div className={`${styles.links} links`}>
-                            {this.makeLinks()}
+                        <div className={styles.links}>
+                            <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
                         </div>
                     </div>
                     
                     <Link to={this.props.next} className={`${styles.next} next`}>Next Project →</Link>
-                </div>            
+                </div>  
             </div>
             </ScrollAnimation>
         );
