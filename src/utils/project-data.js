@@ -3,9 +3,9 @@ const projects = [
         code: "coordinator",
         logo: "coordinator-logo.png",
         title: "Coordinator Tool",
-        description: "As a client service coordinator, I found that there were many aspects of my job that were repetitive and inefficient. I would write the same email dozens of times in one day and keep track of all of my correspondence in a notebook where I had to rewrite my task list every day. I created the coordinator tool to address these pain points and automate as much of the job as possible. The coordinator tool makes tracking reach-outs and organizing tasks extremely easy. The main list tab and completed tab can be used to track, change and revert the status of items. Users can also link the project or contact to external sites (such as a project page or contact page from an external CRM system) for easy navigation. Users are able to create email templates for emails that are commonly sent which then template in values from the item list so that emails can be composed and populated with values for each list item in one click. The dashboard page keeps track of some key statistics that allow the user to keep track of request volume trends as well as other insightful stats and KPI's.",
+        description: "As a client service coordinator, I found that there were many aspects of my job that were repetitive and inefficient. I would write the same email dozens of times in one day and keep track of all of my correspondence in a notebook where I had to rewrite my task list every day. I created the coordinator tool to address these pain points and automate as much of the job as possible. The coordinator tool allows users to keep track of correspondence with contacts, automate emails based on saved templates, and keep track of KPI’s and other interesting stats using the dashboard’s interactive graphs built with D3. This app is an all-in-one solution that made my life as a coordinator a lot easier.",        
         images: ["coordinator-mockup.png", "coordinator-mockup2.png"],
-        techstack: ["ReactJS", "D3.js", "Node.js", "Express.js", "PostgreSQL", "JWT Authentication"],
+        techstack: ["ReactJS", "D3.js", "Node.js", "Express.js", "PostgreSQL", "JWT"],
         links: {
             "Github Frontend": "https://github.com/zoeferencova/coordinator-tool",
             "Github Backend": "https://github.com/zoeferencova/coordinator-tool-api",
@@ -31,8 +31,8 @@ const projects = [
         logo: "Kocolabs-logo.png",
         title: "Kocolabs",
         description: "Kocolabs description",
-        images: ["kocolabs.png", "kocolabs-mockup.png"],
-        techstack: ["Liqiud (Shopify template language)", "Adobe Illustrator"],
+        images: ["kocolabs-mockup.png", "kocolabs.png"],
+        techstack: ["Liqiud", "Adobe Illustrator"],
         links: {
             "Website": "https://kocolabs.com/",
             "Instagram": "https://www.instagram.com/kocolabs/"

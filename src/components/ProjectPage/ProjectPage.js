@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './ProjectPage.module.css';
 import './kocolabs.css';
 import './travelbuddy.css';
@@ -12,12 +13,12 @@ const icons = {
     "HTML": <i class="fab fa-html5"></i>,
     "CSS": <i class="fab fa-css3-alt"></i>,
     "JavaScript": <i class="fab fa-js-square"></i>,
-    "Liqiud (Shopify template language)": <i class="fab fa-shopify"></i>,
+    "Liqiud": <i class="fab fa-shopify"></i>,
     "Adobe Illustrator": <i class="fab fa-adobe"></i>,
     "D3.js": <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3-outline.png" height="10px"></img>,
     "Express.js": <img src="https://www.titechglobal.com/wp-content/uploads/2017/08/ex.png" height="10px"></img>,
     "PostgreSQL": <img src="https://cdn.onlinewebfonts.com/svg/img_145825.png" height="10px"></img>,
-    "JWT Authentication": <i class="fas fa-unlock-alt"></i>,
+    "JWT": <i class="fas fa-unlock-alt"></i>,
     "jQuery": <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png" height="10px"></img>,
     "Github": <i class="fab fa-github"></i>,
     "Github Frontend": <i class="fab fa-github"></i>,
@@ -28,9 +29,9 @@ const icons = {
 
 export default class ProjectPage extends Component {
     makeImages() {
-        return this.props.images.map(image => {
+        return this.props.images.map((image, i) => {
             return(
-                <img className={styles.image} key={image} src={require(`../../images/${image}`)} />
+                <img className={`image${i+1}`} key={image} src={require(`../../images/${image}`)} />
             )
         })
     }
@@ -49,7 +50,7 @@ export default class ProjectPage extends Component {
         const arr = []
         for (let [key, value] of Object.entries(this.props.links)) {
             arr.push(
-                <div className={styles.links} key={key}>
+                <div className={styles.link} key={key}>
                     <span className={styles.icon}>{icons[key]}</span> <a href={value} target="_blank">{key}</a>
                 </div>
             )
@@ -59,20 +60,32 @@ export default class ProjectPage extends Component {
 
     render() {
         return (
+            <ScrollAnimation animateIn="fadeIn">
             <div className={`${this.props.code} ${styles.main}`}>
-                <header>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i class="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img className={styles.logo} src={require(`../../images/${this.props.logo}`)} />}</header>
-                {this.makeImages()}
-                <div className={styles.links}>
-                    {this.makeLinks()}
-                </div>
-                <div className={styles.description}>
-                    {this.props.description}
-                </div>
-                <div className={styles.techstack}>
-                    {this.makeTechStack()}
-                </div>
-                <Link to={this.props.next} className={styles.next}>Next Project →</Link>
+                <div className={`${styles.images} images`}>
+                    {this.makeImages()}
+                </div>    
+                <div className={styles.info}>
+                    <header className={styles.logo}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i class="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} />}</header>
+                    <div className={styles.text}>
+                        <div className={`${styles.details} details`}>
+                            <div className={`${styles.description} description`}>
+                                {this.props.description}
+                            </div>
+                            <div className={`${styles.techstack} techstack`}>
+                                {this.makeTechStack()}
+                            </div>
+                        </div>
+
+                        <div className={`${styles.links} links`}>
+                            {this.makeLinks()}
+                        </div>
+                    </div>
+                    
+                    <Link to={this.props.next} className={`${styles.next} next`}>Next Project →</Link>
+                </div>            
             </div>
+            </ScrollAnimation>
         );
     }
 }
