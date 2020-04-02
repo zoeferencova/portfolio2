@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import styles from './NotFoundPage.module.css';
-import shared from '../../utils/Shared.module.css'
 
 export default class NotFoundPage extends Component {
     render() {

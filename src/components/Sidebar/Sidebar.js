@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import projects from '../../utils/project-data';
 import styles from './Sidebar.module.css';
-import shared from '../../utils/Shared.module.css';
 
 export default class Sidebar extends Component {
     state = {

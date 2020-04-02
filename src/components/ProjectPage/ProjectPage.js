@@ -5,23 +5,23 @@ import styles from './ProjectPage.module.css';
 import './kocolabs.css';
 
 const icons = {
-    "ReactJS": <i class="fab fa-react"></i>,
-    "Node.js": <i class="fab fa-node-js"></i>,
-    "HTML": <i class="fab fa-html5"></i>,
-    "CSS": <i class="fab fa-css3-alt"></i>,
-    "JavaScript": <i class="fab fa-js-square"></i>,
-    "Liqiud": <i class="fab fa-shopify"></i>,
-    "Adobe Illustrator": <i class="fab fa-adobe"></i>,
+    "ReactJS": <i className="fab fa-react"></i>,
+    "Node.js": <i className="fab fa-node-js"></i>,
+    "HTML": <i className="fab fa-html5"></i>,
+    "CSS": <i className="fab fa-css3-alt"></i>,
+    "JavaScript": <i className="fab fa-js-square"></i>,
+    "Liqiud": <i className="fab fa-shopify"></i>,
+    "Adobe Illustrator": <i className="fab fa-adobe"></i>,
     "D3.js": <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3-outline.png" height="10px"></img>,
     "Express.js": <img src="https://www.titechglobal.com/wp-content/uploads/2017/08/ex.png" height="10px"></img>,
     "PostgreSQL": <img src="https://cdn.onlinewebfonts.com/svg/img_145825.png" height="10px"></img>,
-    "JWT": <i class="fas fa-unlock-alt"></i>,
+    "JWT": <i className="fas fa-unlock-alt"></i>,
     "jQuery": <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png" height="10px"></img>,
-    "Github": <i class="fab fa-github"></i>,
-    "Github Frontend": <i class="fab fa-github"></i>,
-    "Github Backend": <i class="fab fa-github"></i>,
-    "Website": <i class="fas fa-external-link-alt"></i>,
-    "Instagram": <i class="fab fa-instagram"></i>,
+    "Github": <i className="fab fa-github"></i>,
+    "Github Frontend": <i className="fab fa-github"></i>,
+    "Github Backend": <i className="fab fa-github"></i>,
+    "Website": <i className="fas fa-external-link-alt"></i>,
+    "Instagram": <i className="fab fa-instagram"></i>,
 }
 
 export default class ProjectPage extends Component {
@@ -70,7 +70,7 @@ export default class ProjectPage extends Component {
                     <div className={styles.text}>
                         <div className={`${styles.details} details`}>
                             <div className={`${styles.description} description`}>
-                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i class="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} />}</header>
+                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i className="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} />}</header>
                                 {this.props.description}
                             </div>
                             <div className={`${styles.techstack} techstack`}>

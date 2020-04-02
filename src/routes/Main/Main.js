@@ -6,8 +6,6 @@ import TravelBuddy from '../../images/travelbuddy.png'
 import styles from './Main.module.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import shared from '../../utils/Shared.module.css'
-
 export default class Main extends Component {
 
     render() {
