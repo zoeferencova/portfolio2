@@ -3,7 +3,8 @@
 }
 
 .kocolabs .logo img {
-    width: 130px;
+    width: auto !important;
+    height: 17px !important;
     margin-bottom: 10px;
 }
 
