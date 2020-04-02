@@ -9,7 +9,7 @@
 
 .logo img {
     width: 60%;
-    height: auto !important;
+    height: auto;
 }
 
 .travelbuddyLogo {
@@ -30,6 +30,7 @@
     justify-content: space-evenly;
     margin-left: 50px;
     align-items: center;
+    height: auto;
 }
 
 .images img {
