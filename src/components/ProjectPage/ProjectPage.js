@@ -70,7 +70,7 @@ export default class ProjectPage extends Component {
                     <div className={styles.text}>
                         <div className={`${styles.details} details`}>
                             <div className={`${styles.description} description`}>
-                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i className="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} alt={`${this.props.title} logo`} />}</header>
+                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i className="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} alt={`${this.props.code} logo`} />}</header>
                                 {this.props.description}
                             </div>
                             <div className={`${styles.techstack} techstack`}>

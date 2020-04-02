@@ -2,6 +2,10 @@
     width: 50%;
 }
 
-.kocolabs .logo img {
-    
+
+@media only screen and (max-width: 400px) {
+    .kocolabs .logo img {
+        height: 12px !important;
+        width: auto !important;
+    }
 }
