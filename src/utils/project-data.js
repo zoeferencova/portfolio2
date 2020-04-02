@@ -30,7 +30,7 @@ const projects = [
         code: "kocolabs",
         logo: "Kocolabs-logo.png",
         title: "Kocolabs",
-        description: "Kocolabs is an e-commerce company that sells Korean skincare products with a mission of making skincare and self-care accessible, affordable, and inclusive for all demographics. I have been working with the founders of the company from the beginning to build their store on Shopify and help create their brand identity. Through this experience, I have learned Shopify’s Liquid template language which is built on Ruby. Kocolabs is set to officially launch this month (April 2020).",
+        description: "Kocolabs is an e-commerce company that sells Korean skincare products with a mission of making skincare and self-care accessible, affordable, and inclusive for all demographics. I have been working with the founders of the company from the beginning to build their store on Shopify and help create their brand identity. Through this experience, I have learned Shopify’s Liquid template language. Kocolabs is set to officially launch this month (April 2020).",
         images: ["kocolabs-mockup.png", "kocolabs.png"],
         techstack: ["Liqiud", "Adobe Illustrator"],
         links: {
