@@ -12,9 +12,9 @@ export default class Main extends Component {
         return (
             <ScrollAnimation animateIn="fadeIn">
             <div className={styles.container}>
-                <Link to="/coordinator" className={styles.coordinator}><span className={styles.projectName}>Coordinator Tool</span><img src={Coordinator} width="100%"></img></Link>
-                <Link to="/kocolabs" className={styles.kocolabs}><span className={styles.projectName}>Kocolabs</span><img src={Kocolabs} width="100%"></img></Link>
-                <Link to="/travelbuddy" className={styles.travelbuddy}><span className={styles.projectName}>TravelBuddy</span><img src={TravelBuddy} width="100%"></img></Link>
+                <Link to="/coordinator" className={styles.coordinator}><span className={styles.projectName}>Coordinator Tool</span><img src={Coordinator} width="100%" alt="Coordinator tool"></img></Link>
+                <Link to="/kocolabs" className={styles.kocolabs}><span className={styles.projectName}>Kocolabs</span><img src={Kocolabs} width="100%" alt="Kocolabs"></img></Link>
+                <Link to="/travelbuddy" className={styles.travelbuddy}><span className={styles.projectName}>TravelBuddy</span><img src={TravelBuddy} width="100%" alt="TravelBuddy"></img></Link>
             </div>
             </ScrollAnimation>
             
