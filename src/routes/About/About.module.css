@@ -1,0 +1,66 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.aboutText {
+    font-size: 13px;
+    line-height: 1.5em;
+    letter-spacing: 0.6px;
+    background-color: white;
+    padding: 50px;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.image {
+    width: 25%;
+}
+
+.headshot {
+    width: 100%;
+    height: auto;
+}
+
+.cats {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.hoverMessage {
+    color: gray;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hoverMessage {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        height: 82vh;
+    }
+
+    .aboutText {
+        margin: 0% 0% 10% 0%;
+        padding: 30px;
+        font-size: 12px;
+        width: 60%;
+    }
+
+    .image {
+        width: 50%;
+    }
+}

@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './ProjectPage.module.css';
 import './kocolabs.css';
-import './travelbuddy.css';
-import './coordinator.css';
-import shared from '../../utils/Shared.module.css';
 
 const icons = {
     "ReactJS": <i class="fab fa-react"></i>,
