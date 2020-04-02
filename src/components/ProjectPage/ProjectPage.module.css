@@ -274,5 +274,10 @@
     .info {
         width: 100%;
     }
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
     
 }
