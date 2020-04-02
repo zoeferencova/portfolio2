@@ -8,7 +8,7 @@
 }
 
 .logo img {
-    width: 60%;
+    width: 200px;
     height: auto !important;
 }
 
@@ -176,6 +176,7 @@
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
+        height: 100%;
     }
 
     .info {
@@ -194,6 +195,7 @@
     .details {
         margin: 30px 0;
         width: 100%;
+        height: auto;
     }
 
     .images img {
@@ -266,6 +268,7 @@
         margin-bottom: 60px;
         align-self: center;
         width: 90%;
+
     }
 
     .linksMobile .link, .linksMobile .seeOn {
