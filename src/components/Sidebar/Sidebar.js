@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, HashRouter } from 'react-router-dom';
 import projects from '../../utils/project-data';
 import styles from './Sidebar.module.css';
 
@@ -22,11 +22,13 @@ export default class Sidebar extends Component {
                 </header>
                 <span className={styles.menu} onClick={e => !this.state.expanded ? this.setState({ expanded: true }) : this.setState({ expanded: false })}>Menu {!this.state.expanded && <span className={styles.arrow}>▽</span>}{this.state.expanded && <span className={styles.arrow}>△</span>}</span>
                 <div className={`${styles.info} ${this.state.expanded ? styles.show : ''}`}>
-                <ul className={styles.links}>
-                    <li onClick={e => this.setState({ expanded: false })}><NavLink exact to='/'>Projects</NavLink></li>
-                    {this.makeNavLinks()}
-                    <li onClick={e => this.setState({ expanded: false })}><NavLink to='/about'>About Me</NavLink></li>
-                </ul>
+                <HashRouter basename="/">
+                    <ul className={styles.links}>
+                        <li onClick={e => this.setState({ expanded: false })}><NavLink exact to='/'>Projects</NavLink></li>
+                        {this.makeNavLinks()}
+                        <li onClick={e => this.setState({ expanded: false })}><NavLink to='/about'>About Me</NavLink></li>
+                    </ul>   
+                </HashRouter>
                 <address>
                     <ul className={styles.contact}>
                         <li><a target="_blank" rel="noopener noreferrer"  href="https://www.google.com/maps/place/Queens,+NY/@40.6509334,-74.011276,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24369470a592b:0x4109d18b6c5c7b05!8m2!3d40.7282239!4d-73.7948516"><i className="fas fa-map-marker-alt"></i> Queens, NY</a></li>

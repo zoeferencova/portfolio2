@@ -10,16 +10,16 @@ import './App.css';
 
 class App extends Component {
   backgroundColor() {
-    switch (this.props.location.pathname) {
-      case '/coordinator':
+    switch (this.props.location.hash) {
+      case '#/coordinator':
         return 'green'
-      case '/kocolabs':
+      case '#/kocolabs':
         return 'blue'
-      case '/travelbuddy':
+      case '#/travelbuddy':
         return 'yellow'
-      case '/about':
+      case '#/about':
         return 'indigo'
-      case '/':
+      case '#/':
         return 'white'
       default:
         return 'white';
@@ -28,7 +28,7 @@ class App extends Component {
 
   makeProjectRoutes() {
     const routes = projects.map(project => {
-      return <Route exact key={project.code} path={`/${project.code}`} render={(props) => <ProjectPage {...props} code={project.code} logo={project.logo} description={project.description} images={project.images} techstack={project.techstack} links={project.links} next={project.next} />}/> 
+      return <Route key={project.code} path={`/${project.code}`} render={(props) => <ProjectPage {...props} code={project.code} logo={project.logo} description={project.description} images={project.images} techstack={project.techstack} links={project.links} next={project.next} />}/> 
     })
 
     return routes;
@@ -41,7 +41,7 @@ class App extends Component {
         <div className={shared.main}>
           <HashRouter basename="/">
             <Route exact path={'/'} component={Main} /> 
-            <Route exact path={'/about'} component={About} /> 
+            <Route path={'/about'} component={About} /> 
             {this.makeProjectRoutes()}
           </HashRouter>
         </div>

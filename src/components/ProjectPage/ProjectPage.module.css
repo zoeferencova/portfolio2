@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 .logo {
-    opacity: 80%;
+    opacity: 0.8;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
