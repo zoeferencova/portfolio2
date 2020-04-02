@@ -8,6 +8,7 @@
     right: 0;
     z-index: 0;
     overflow-y: scroll;
+    height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
