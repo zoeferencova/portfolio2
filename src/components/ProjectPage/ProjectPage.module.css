@@ -9,7 +9,7 @@
 
 .logo img {
     width: 60%;
-    height: auto;
+    height: auto !important;
 }
 
 .travelbuddyLogo {
@@ -30,11 +30,11 @@
     justify-content: space-evenly;
     margin-left: 50px;
     align-items: center;
-    height: auto;
+    height: auto !important;
 }
 
 .images img {
-    height: auto;
+    height: auto !important;
     width: 100%;
 }
 
@@ -45,6 +45,7 @@
     align-items: center;
     width: 55%;
     margin-top: 11%;
+    height: auto;
 }
 
 .main {
@@ -121,6 +122,7 @@
 
 .text {
     width: 80%;
+    height: auto;
 }
 
 .next {
@@ -182,6 +184,7 @@
 
     .info, .images {
         width: 70%;
+        height: auto;
     }
 
     .techstack {
