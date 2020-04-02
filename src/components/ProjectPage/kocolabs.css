@@ -3,7 +3,7 @@
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .kocolabs .logo img {
         height: 12px !important;
         width: auto !important;
