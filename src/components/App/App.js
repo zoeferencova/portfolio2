@@ -20,7 +20,7 @@ class App extends Component {
         return 'yellow'
       case '/about':
         return 'indigo'
-      case '/':
+      case '/portfolio':
         return 'white'
       default:
         return 'white';
@@ -41,7 +41,7 @@ class App extends Component {
         <Sidebar />
         <div className={shared.main}>
           <Switch>
-            <Route exact path={'/'} component={Main} /> 
+            <Route path={'/portfolio'} component={Main} /> 
             <Route path={'/about'} component={About} /> 
             {this.makeProjectRoutes()}
             <Route component={NotFoundPage} /> 
