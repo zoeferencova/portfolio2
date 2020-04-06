@@ -35,7 +35,7 @@ export default class Sidebar extends Component {
                         <li><a target="_blank" rel="noopener noreferrer"  href="mailto:zoeferecova@gmail.com"><i className="fas fa-envelope"></i> Email me</a></li>
                         <li><a target="_blank" rel="noopener noreferrer"  href="https://github.com/zoeferencova/"><i className="fab fa-github"></i> Github</a></li>
                         <li><a target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/in/zoeferencova/"><i className="fab fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a target="_blank" rel="noopener noreferrer"  href=""><i className="fas fa-file"></i> Resume</a></li>
+                        <li><a target="_blank" rel="noopener noreferrer"  href="https://drive.google.com/file/d/10VOxsr37KxC9ElvKE0Amp_Y0a3xEspnb/view?usp=sharing"><i className="fas fa-file"></i> Resume</a></li>
                     </ul>
                 </address>
                 </div>
