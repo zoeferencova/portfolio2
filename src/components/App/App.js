@@ -9,23 +9,6 @@ import shared from '../../utils/Shared.module.css'
 import './App.css';
 
 class App extends Component {
-  backgroundColor() {
-    switch (this.props.location.hash) {
-      case '#/coordinator':
-        return 'green'
-      case '#/kocolabs':
-        return 'blue'
-      case '#/travelbuddy':
-        return 'yellow'
-      case '#/about':
-        return 'indigo'
-      case '#/':
-        return 'white'
-      default:
-        return 'white';
-    }
-  }
-
   makeProjectRoutes() {
     const routes = projects.map(project => {
       return <Route key={project.code} path={`/${project.code}`} render={(props) => <ProjectPage {...props} code={project.code} logo={project.logo} description={project.description} images={project.images} techstack={project.techstack} links={project.links} next={project.next} />}/> 
@@ -36,7 +19,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className={`App ${this.backgroundColor()}`}>
+      <div className="App">
         <Sidebar />
         <div className={shared.main}>
           <HashRouter basename="/">

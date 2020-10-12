@@ -3,31 +3,7 @@
 .App {
   font-family: 'Assistant';
   box-sizing: border-box;
-}
-
-.blue {
-  background-color: #e9f2f2;
-  transition: 1s;
-}
-
-.yellow {
-  background-color: #f7f7eb;
-  transition: 1s;
-}
-
-.green {
-  background-color: #ebf2eb;
-  transition: 1s;
-}
-
-.indigo {
-  background-color: #e9eaf5;
-  transition: 1s;
-}
-
-.white {
   background-color: #fcfcf7;
-  transition: 1s;
 }
 
 @media only screen and (max-width: 600px) {
