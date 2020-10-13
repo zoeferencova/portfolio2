@@ -1,33 +1,16 @@
 .container {
-    display: flex;
-    padding: 20px;
-    overflow-x: scroll;
-}
-
-.travelbuddy {
-    display: table;
-    margin-top: 10%;
-    margin-right: 5%;
-}
-
-
-.kocolabs {
-    display: table;
-    margin-top: 38%;
-    margin-left: -17%;
-    margin-right: 6%;
-}
-
-.coordinator {
-    display: table;
-    margin-top: 2%;
-    margin-left: 7%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
 
 .coordinator img, .kocolabs img, .travelbuddy img {
-    display: table-row;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    height: 400px;
 }
 
 .travelbuddy img:hover, .kocolabs img:hover, .coordinator img:hover {
@@ -65,38 +48,6 @@
 
 .projectName a {
     text-decoration: none;
-}
-
-@media only screen and (max-width: 1200px) {
-    .container {
-        flex-wrap: wrap;
-    }
-
-    .coordinator {
-        margin: 30px;
-        width: 60%;
-    }
-
-    .travelbuddy {
-        margin: 30px auto;
-        width: 50%;
-    }
-
-    .kocolabs {
-        width: 25%;
-        margin: 120px 20px 20px 50px;
-    }
-}
-
-@media only screen and (max-width: 1118px) {
-    .coordinator {
-        margin: 30px auto;
-        width: 70%;
-    }
-
-    .kocolabs {
-        margin-top: 80px;
-    }
 }
 
 @media only screen and (max-width: 900px) {
