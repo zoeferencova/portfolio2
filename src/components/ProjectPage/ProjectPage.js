@@ -4,18 +4,18 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './ProjectPage.module.css';
 
 const icons = {
-    "ReactJS": <i className="fab fa-react"></i>,
-    "Node.js": <i className="fab fa-node-js"></i>,
-    "HTML": <i className="fab fa-html5"></i>,
-    "CSS": <i className="fab fa-css3-alt"></i>,
-    "JavaScript": <i className="fab fa-js-square"></i>,
-    "Liqiud": <i className="fab fa-shopify"></i>,
-    "Adobe Illustrator": <i className="fab fa-adobe"></i>,
-    "D3.js": <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3-outline.png" height="10px" alt="D3 logo"></img>,
-    "Express.js": <img src="https://www.titechglobal.com/wp-content/uploads/2017/08/ex.png" height="10px" alt="Express.js logo"></img>,
-    "PostgreSQL": <img src="https://cdn.onlinewebfonts.com/svg/img_145825.png" height="10px" alt="PostgreSQL logo"></img>,
-    "JWT": <i className="fas fa-unlock-alt"></i>,
-    "jQuery": <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png" height="10px" alt="jQuery logo"></img>,
+    // "ReactJS": <i className="fab fa-react"></i>,
+    // "Node.js": <i className="fab fa-node-js"></i>,
+    // "HTML": <i className="fab fa-html5"></i>,
+    // "CSS": <i className="fab fa-css3-alt"></i>,
+    // "JavaScript": <i className="fab fa-js-square"></i>,
+    // "Liqiud": <i className="fab fa-shopify"></i>,
+    // "Adobe Illustrator": <i className="fab fa-adobe"></i>,
+    // "D3.js": <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3-outline.png" height="10px" alt="D3 logo"></img>,
+    // "Express.js": <img src="https://www.titechglobal.com/wp-content/uploads/2017/08/ex.png" height="10px" alt="Express.js logo"></img>,
+    // "PostgreSQL": <img src="https://cdn.onlinewebfonts.com/svg/img_145825.png" height="10px" alt="PostgreSQL logo"></img>,
+    // "JWT": <i className="fas fa-unlock-alt"></i>,
+    // "jQuery": <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png" height="10px" alt="jQuery logo"></img>,
     "Github": <i className="fab fa-github"></i>,
     "Github Frontend": <i className="fab fa-github"></i>,
     "Github Backend": <i className="fab fa-github"></i>,
@@ -33,13 +33,7 @@ export default class ProjectPage extends Component {
     }
 
     makeTechStack() {
-        return this.props.techstack.map(technology => {
-            return (
-                <div className={styles.technology} key={technology}>
-                    <span className={styles.icon}>{icons[technology]}</span> {technology}
-                </div>
-            )
-        })
+        return this.props.techstack.map(technology => <li className={styles.technology}>{technology}</li>);
     }
 
     makeLinks() {
@@ -59,24 +53,18 @@ export default class ProjectPage extends Component {
             <ScrollAnimation animateIn="fadeIn">
             <div className={`${this.props.code} ${styles.main}`}>
                 <Link to={this.props.next} className={`${styles.next} ${styles.nextMobile}`}>Next Project →</Link>          
-                <div className={`${styles.links} ${styles.linksMobile}`}>
-                    <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
-                </div>   
                 <div className={styles.info}>
-                    <div className={styles.text}>
-                        <div className={`${styles.details} details`}>
-                            <div className={`${styles.description} description`}>
-                                {this.props.description}
-                            </div>
-                            <div className={`${styles.techstack} techstack`}>
-                                {this.makeTechStack()}
-                            </div>
-                        </div>
-                        <div className={styles.links}>
-                            <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
-                        </div>
+                    <div className={`${styles.description} description`}>
+                        {this.props.description}
                     </div>
-                    
+                    <div className={`${styles.techstack} techstack`}>
+                        <ul className={styles.techList}>
+                            {this.makeTechStack()}
+                        </ul>
+                    </div>
+                    <div className={styles.links}>
+                        <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
+                    </div>
                     <Link to={this.props.next} className={`${styles.next} next`}>Next Project →</Link>
                 </div>  
                 <div className={`${styles.images} images`}>

@@ -15,8 +15,8 @@ export default class Main extends Component {
             <div className={styles.container}>
                 <Link to="/coordinator" className={styles.project}><span className={styles.name}>Coordinator Tool</span><img src={Coordinator} width="100%" alt="Coordinator tool"></img></Link>
                 <Link to="/kocolabs" className={styles.project}><span className={styles.name}>Kocolabs</span><img src={Kocolabs} width="100%" alt="Kocolabs"></img></Link>
-                <Link to="/travelbuddy" className={styles.project}><span className={styles.name}>TravelBuddy</span><img src={TravelBuddy} width="100%" alt="TravelBuddy"></img></Link>
                 <Link to="/community" className={styles.project}><span className={styles.name}>CommUnity</span><img src={CommUnity} width="100%" alt="TravelBuddy"></img></Link>
+                <Link to="/travelbuddy" className={styles.project}><span className={styles.name}>TravelBuddy</span><img src={TravelBuddy} width="100%" alt="TravelBuddy"></img></Link>
             </div>
             </ScrollAnimation>
             

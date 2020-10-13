@@ -1,4 +1,18 @@
 const projects = [
+    {   
+        code: "community",
+        title: "CommUnity",
+        subtitle: "Project subtitle",
+        description: "Community description",
+        images: ["community-main.png", "community-chat.png", "community-post.png"],
+        techstack: ["ReactJS", "Node.js", "Express.js", "PostgreSQL", "JWT","Socket.io", "Google Maps API"],
+        links: {
+            "Github Frontend": "https://github.com/zoeferencova/community-frontent",
+            "Github Backend": "https://github.com/zoeferencova/community-api",
+            "Website": "https://comm-unity.now.sh/",
+        },
+        next: "/coordinator"
+    },
     {
         code: "coordinator",
         title: "Coordinator Tool",
@@ -13,19 +27,6 @@ const projects = [
         },
         next: "/travelbuddy"
     },
-    {
-        code: "travelbuddy",
-        title: "TravelBuddy",
-        subtitle: "Project subtitle",
-        description: "For my first Bloc capstone project, I built a travel recommendation and information site using various APIs. Using the Foursquare API, the app allows the user to input any location and category and view a list of recommended establishments along with some useful information about each place. The user is also shown a map of each place from the Google Maps API, some background information from the Wikipedia API, and some recent news about the location from the News API. I had a lot of fun designing the graphics for this project and I particularly enjoyed creating this user interface as I personally love to travel and learn about new places.",
-        images: ["travelbuddy-main.png", "travelbuddy-info.png"],
-        techstack: ["HTML", "CSS", "JavaScript", "jQuery"],
-        links: {
-            "Github": "https://github.com/zoeferencova/travelbuddy",
-            "Website": "https://zoeferencova.github.io/travelbuddy/"
-        },
-        next: "/kocolabs"
-    },
     {   
         code: "kocolabs",
         title: "Kocolabs",
@@ -39,19 +40,18 @@ const projects = [
         },
         next: "/community"
     },
-    {   
-        code: "community",
-        title: "CommUnity",
+    {
+        code: "travelbuddy",
+        title: "TravelBuddy",
         subtitle: "Project subtitle",
-        description: "Community description",
-        images: ["community-main.png", "community-chat.png", "community-post.png"],
-        techstack: ["ReactJS", "Node.js", "Express.js", "PostgreSQL", "JWT","Socket.io", "Google Maps API"],
+        description: "For my first Bloc capstone project, I built a travel recommendation and information site using various APIs. Using the Foursquare API, the app allows the user to input any location and category and view a list of recommended establishments along with some useful information about each place. The user is also shown a map of each place from the Google Maps API, some background information from the Wikipedia API, and some recent news about the location from the News API. I had a lot of fun designing the graphics for this project and I particularly enjoyed creating this user interface as I personally love to travel and learn about new places.",
+        images: ["travelbuddy-main.png", "travelbuddy-info.png"],
+        techstack: ["HTML", "CSS", "JavaScript", "jQuery"],
         links: {
-            "Github Frontend": "https://github.com/zoeferencova/community-frontent",
-            "Github Backend": "https://github.com/zoeferencova/community-api",
-            "Website": "https://comm-unity.now.sh/",
+            "Github": "https://github.com/zoeferencova/travelbuddy",
+            "Website": "https://zoeferencova.github.io/travelbuddy/"
         },
-        next: "/coordinator"
+        next: "/kocolabs"
     },
 ];
 

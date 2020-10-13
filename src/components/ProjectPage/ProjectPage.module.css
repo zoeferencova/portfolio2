@@ -14,7 +14,7 @@
 .images img {
     height: auto !important;
     width: 100%;
-    padding: 60px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
 }
 
 .info {
@@ -27,6 +27,10 @@
     height: auto;
 }
 
+.info div {
+    width: 65%;
+}
+
 .main {
     width: 100%;
     display: flex;
@@ -37,20 +41,27 @@
     font-size: 13px;
     line-height: 1.5em;
     letter-spacing: 0.6px;
-    background-color: white;
-    padding: 50px;
 }
 
 .technology, .links {
-    height: 15px;
-    margin-left: 10px;
     font-size: 12px;
-    text-transform: uppercase;
     letter-spacing: 0.7px;
+    margin: 10px 0px;
+}
+
+.techList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    align-items: center;
-    margin: 10px;
-    
+    flex-wrap: wrap;
+}
+
+.technology {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin: 12px 12px 0px 0px;
 }
 
 .link a {
@@ -58,39 +69,13 @@
     color: black;
 }
 
-.link {
-    margin-right: 20px;
-}
-
-.links {
-    margin: 30px 0px;
-    align-self: flex-start;
-}
-
-.linksMobile {
-    display: none;
-}
-
 .seeOn {
     margin-right: 15px;
 }
 
-.icon, .icon img {
-    margin-right: 5px;
-}
-
 .icon {
+    margin-right: 5px;
     font-size: 15px;
-}
-
-.icon img {
-    height: 15px;
-}
-
-.techstack {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
 }
 
 .details {
