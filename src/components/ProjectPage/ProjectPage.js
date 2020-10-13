@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import styles from './ProjectPage.module.css';
-import './kocolabs.css';
 
 const icons = {
     "ReactJS": <i className="fab fa-react"></i>,
@@ -28,7 +27,7 @@ export default class ProjectPage extends Component {
     makeImages() {
         return this.props.images.map((image, i) => {
             return(
-                <img className={`image${i+1}`} key={image} src={require(`../../images/${image}`)} alt={`${this.props.title}`} />
+                <img key={image} src={require(`../../images/${this.props.code}/${image}`)} alt={`${this.props.title}`} />
             )
         })
     }
@@ -62,15 +61,11 @@ export default class ProjectPage extends Component {
                 <Link to={this.props.next} className={`${styles.next} ${styles.nextMobile}`}>Next Project →</Link>          
                 <div className={`${styles.links} ${styles.linksMobile}`}>
                     <span className={styles.seeOn}>See on: </span> {this.makeLinks()}
-                </div>
-                <div className={`${styles.images} images`}>
-                    {this.makeImages()}
-                </div>    
+                </div>   
                 <div className={styles.info}>
                     <div className={styles.text}>
                         <div className={`${styles.details} details`}>
                             <div className={`${styles.description} description`}>
-                                <header className={`${styles.logo} logo`}>{this.props.code === "travelbuddy" ? <div className={styles.travelbuddyLogo}><i className="fas fa-map-marker-alt"></i><span>travelbuddy</span></div> : <img src={require(`../../images/${this.props.logo}`)} alt={`${this.props.code} logo`} />}</header>
                                 {this.props.description}
                             </div>
                             <div className={`${styles.techstack} techstack`}>
@@ -84,6 +79,9 @@ export default class ProjectPage extends Component {
                     
                     <Link to={this.props.next} className={`${styles.next} next`}>Next Project →</Link>
                 </div>  
+                <div className={`${styles.images} images`}>
+                    {this.makeImages()}
+                </div> 
             </div>
             </ScrollAnimation>
         );

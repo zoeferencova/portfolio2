@@ -1,41 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-.logo {
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-}
-
-.logo img {
-    height: 30px !important;
-    width: auto !important;
-}
-
-.travelbuddyLogo {
-    font-family: "Quicksand";
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.travelbuddyLogo i {
-    margin-right: 15px;
-}
-
 .images {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    justify-content: space-evenly;
-    margin-left: 50px;
-    align-items: center;
-    height: auto !important;
+    width: 45%;
+    padding-right: 50px;
+    margin-right: 0px;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+
 }
 
 .images img {
     height: auto !important;
     width: 100%;
+    padding: 60px 0px 0px 0px;
 }
 
 .info {
@@ -147,143 +126,4 @@
 
 .nextMobile {
     display: none;
-}
-
-@media only screen and (min-width: 1650px) {
-    .main {
-        justify-content: space-around;
-    }
-
-    .travelbuddyLogo {
-        font-size: 30px;
-    }
-
-    .info {
-        width: 45%;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .links, .technology {
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 1350px) {
-    .main {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        align-items: center;
-        height: auto !important;
-    }
-
-    .info {
-        margin-top: 3%;
-    }
-
-    .info, .images {
-        width: 70%;
-        height: auto;
-    }
-
-    .techstack {
-        margin-left: 40px;
-    }
-
-    .details {
-        margin: 30px 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .images img {
-        margin: 30px 0;
-    }
-
-    .images {
-        margin-left: 0px;
-    }
-
-    .next {
-        display: none;
-    }
-
-    .nextMobile {
-        display: block;
-        align-self: center;
-        margin: 30px 0;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    .info {
-        width: 85%;
-        height: auto !important;
-    }
-}
-
-@media only screen and (max-width: 1150px) {
-    .info {
-        width: 100%;
-        height: auto !important;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .images {
-        width: 80%;
-        height: auto !important;
-    }
-
-    .description {
-        padding: 30px;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    .details {
-        flex-direction: column;
-    }
-
-    .techstack {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .links {
-        display: none;
-    }
-
-    .linksMobile {
-        justify-content: center;
-        flex-wrap: wrap;
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 60px;
-        align-self: center;
-        width: 90%;
-
-    }
-
-    .linksMobile .link, .linksMobile .seeOn {
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .info {
-        width: 100%;
-    }
-
-    .logo img {
-        height: 25px !important;
-        width: auto !important;
-    }
-    
 }

@@ -7,31 +7,30 @@
     grid-row-gap: 50px;
 }
 
-.coordinator img, .kocolabs img, .travelbuddy img {
+.project img {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    height: 400px;
 }
 
-.travelbuddy img:hover, .kocolabs img:hover, .coordinator img:hover {
+.project img:hover {
     opacity: 0.2;
     transition: 0.7s;
-    cursor: url('../../images/eye.png'), auto;
+    cursor: url('../../images/other/eye.png'), auto;
 }
 
-.travelbuddy:hover .projectName, .kocolabs:hover .projectName, .coordinator:hover .projectName {
+.project:hover .name {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
-.kocolabs, .travelbuddy, .coordinator {
+.project {
     position: relative;
     text-align: center;
     opacity: 1;
     transition: opacity 1s ease-in;
 }
 
-.projectName {
+.name {
     display: block;
     position: absolute;
     top: 50%;
@@ -46,7 +45,7 @@
     padding: 6px;
 }
 
-.projectName a {
+.name a {
     text-decoration: none;
 }
 
@@ -56,13 +55,4 @@
         flex-wrap: nowrap;
         align-items: center;
     }
-
-    .coordinator, .kocolabs, .travelbuddy {
-        margin: 0px 40px 40px 40px;
-        width: 70%;
-    }
-
-    .travelbuddy {
-        margin-bottom: 50px;
-    }  
 }
