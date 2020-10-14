@@ -3,7 +3,7 @@
 .App {
   font-family: 'Assistant';
   box-sizing: border-box;
-  background-color: #fcfcf7;
+  background-color: #fffefc;
 }
 
 @media only screen and (max-width: 600px) {
