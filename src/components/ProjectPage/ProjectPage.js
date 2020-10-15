@@ -55,9 +55,11 @@ export default class ProjectPage extends Component {
                            {this.makeLinks()}
                         </ul>
                     </div>
-                </div>  
-                <div className={`${styles.images} images`}>
-                    {this.makeImages()}
+                </div> 
+                <div className={styles.imageOverlay}>
+                    <div className={`${styles.images} images`}>
+                        {this.makeImages()}
+                    </div> 
                 </div> 
             </div>
             </ScrollAnimation>
