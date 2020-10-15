@@ -32,8 +32,8 @@
     width: 38%;
     justify-content: center;
     position: fixed;
-    z-index: 1;
     height: 100%;
+    z-index: 1;
 }
 
 .info div {
@@ -109,6 +109,7 @@
 .seeOn {
     margin-right: 15px;
     align-self: center;
+    margin-bottom: 10px;
 }
 
 .icon {
@@ -127,32 +128,113 @@
     height: auto;
 }
 
-.next {
-    text-decoration: none;
-    color: black;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    align-self: flex-end;
-    margin-right: 40px;
-    justify-self: flex-end;
+.scrollMessage {
+    position: fixed;
+    bottom: 50px;
+    right: -30px;
+    transform: rotate(90deg);
+    z-index: 3;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 200;
 }
 
-.next:hover {
-    background-color: black;
-    color: white;
-    transition: 0.5s;
+:global .read-more-button {
+    color: blue;
 }
 
-.nextMobile {
+:global .display-text-group {
     display: none;
 }
 
-@media only screen and (max-width: 900px) {
+.firstParagraph {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .scrollMessage {
+        display: none;
+    }
+
     .main {
         flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .main, .images, .description, .imageOverlay, .info {
+        position: static;
+    }
+
+    .images, .info {
+        width: 65%;
+    }
+
+    .subtitle {
+        width: 100%;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .images {
+        margin-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .imageOverlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .images, .info {
+        width: 80%;
+    }
+
+    .subtitle {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    :global .display-text-group {
+        display: inline;
+        white-space: pre-wrap;
+    }
+
+    :global .read-more-button {
+        display: inline !important;
+        color: #a64453;
+    }
+
+    :global .read-more-button:hover {
+        cursor: pointer;
+        color: #c98b96;
+        transition: 0.2s;
+    }
+
+    .firstParagraph {
+        display: inline;
+    }
+
+    .paragraph {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        padding-top: 20px;
     }
 }

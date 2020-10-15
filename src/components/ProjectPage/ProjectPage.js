@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReadMoreReact from 'read-more-react';
 import styles from './ProjectPage.module.css';
 
 const icons = {
@@ -11,6 +12,7 @@ const icons = {
 }
 
 export default class ProjectPage extends Component {
+
     makeImages() {
         return this.props.images.map((image, i) => {
             return(
@@ -42,7 +44,8 @@ export default class ProjectPage extends Component {
                 <div className={styles.info}>
                     <h1 className={styles.subtitle}>{this.props.subtitle}</h1>
                     <div className={`${styles.description} description`}>
-                        {this.props.description.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                        {this.props.description.map((paragraph, i) => <p key={i} className={styles.paragraph}>{paragraph}</p>)}
+                        <ReadMoreReact id="readMore" text={this.props.description.join("\n \n")} min={400} ideal={450} max={500} readMoreText={" Read more"} />
                     </div>
                     <div className={`${styles.techstack} techstack`}>
                         <ul className={styles.techList}>
@@ -60,7 +63,9 @@ export default class ProjectPage extends Component {
                     <div className={`${styles.images} images`}>
                         {this.makeImages()}
                     </div> 
-                </div> 
+                </div>
+                
+                <p className={styles.scrollMessage}>Scroll for more →</p> 
             </div>
             </ScrollAnimation>
         );
