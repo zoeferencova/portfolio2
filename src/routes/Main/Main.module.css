@@ -49,10 +49,19 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .container {
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        margin: 25px;
     }
 }
