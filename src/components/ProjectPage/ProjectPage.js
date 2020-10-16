@@ -12,7 +12,6 @@ const icons = {
 }
 
 export default class ProjectPage extends Component {
-
     makeImages() {
         return this.props.images.map((image, i) => {
             return(
@@ -59,12 +58,9 @@ export default class ProjectPage extends Component {
                         </ul>
                     </div>
                 </div> 
-                <div className={styles.imageOverlay}>
-                    <div className={`${styles.images} images`}>
-                        {this.makeImages()}
-                    </div> 
-                </div>
-                
+                <div className={`${styles.images} images`}>
+                    {this.makeImages()}
+                </div> 
                 <p className={styles.scrollMessage}>Scroll for more →</p> 
             </div>
             </ScrollAnimation>
