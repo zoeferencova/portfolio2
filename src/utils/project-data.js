@@ -7,7 +7,7 @@ const projects = [
         images: ["community-main.png", "community-chat.png", "community-post.png"],
         techstack: ["ReactJS", "Node.js", "Express.js", "PostgreSQL", "JWT","Socket.io", "Google Maps API"],
         links: {
-            "Github Frontend": "https://github.com/zoeferencova/community-frontent",
+            "Github Frontend": "https://github.com/zoeferencova/community-frontend",
             "Github Backend": "https://github.com/zoeferencova/community-api",
             "Website": "https://comm-unity.now.sh/",
         }
