@@ -55,13 +55,21 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .images img {
+        margin: 20px 0px;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .container {
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
         margin: 25px;
+    }
+
+    .images img {
+        margin: 10px 0px;
     }
 }
