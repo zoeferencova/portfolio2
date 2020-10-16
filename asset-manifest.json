@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c4d6538e.chunk.css",
+    "main.js": "/portfolio/static/js/main.d12dcc28.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d12dcc28.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.591ba10e.chunk.js": "/portfolio/static/js/2.591ba10e.chunk.js",
+    "static/js/2.591ba10e.chunk.js.map": "/portfolio/static/js/2.591ba10e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.cc5b8bf9ebb5047236f3e6d423f0d8f7.js": "/portfolio/precache-manifest.cc5b8bf9ebb5047236f3e6d423f0d8f7.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.c4d6538e.chunk.css.map": "/portfolio/static/css/main.c4d6538e.chunk.css.map",
+    "static/js/2.591ba10e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.591ba10e.chunk.js.LICENSE.txt",
+    "static/media/cats.JPG": "/portfolio/static/media/cats.f48a7fd2.JPG",
+    "static/media/community-chat.png": "/portfolio/static/media/community-chat.809ca7a5.png",
+    "static/media/community-main.png": "/portfolio/static/media/community-main.4a58f62f.png",
+    "static/media/community-post.png": "/portfolio/static/media/community-post.a3d692c6.png",
+    "static/media/community.png": "/portfolio/static/media/community.7e8fbe42.png",
+    "static/media/coordinator-account.png": "/portfolio/static/media/coordinator-account.88ae1e14.png",
+    "static/media/coordinator-dashboard.png": "/portfolio/static/media/coordinator-dashboard.672d6f3b.png",
+    "static/media/coordinator-main.png": "/portfolio/static/media/coordinator-main.886d4d66.png",
+    "static/media/coordinator-templates.png": "/portfolio/static/media/coordinator-templates.9f3f6562.png",
+    "static/media/coordinator.png": "/portfolio/static/media/coordinator.a9a11c44.png",
+    "static/media/headshot.JPG": "/portfolio/static/media/headshot.f6bbac50.JPG",
+    "static/media/kocolabs-collection.png": "/portfolio/static/media/kocolabs-collection.593476ce.png",
+    "static/media/kocolabs-main.png": "/portfolio/static/media/kocolabs-main.d1e88848.png",
+    "static/media/kocolabs-product.png": "/portfolio/static/media/kocolabs-product.87a3beae.png",
+    "static/media/kocolabs.png": "/portfolio/static/media/kocolabs.3ba1acfe.png",
+    "static/media/travelbuddy-info.png": "/portfolio/static/media/travelbuddy-info.797f69d7.png",
+    "static/media/travelbuddy-main.png": "/portfolio/static/media/travelbuddy-main.fb37b4b4.png",
+    "static/media/travelbuddy.png": "/portfolio/static/media/travelbuddy.a3422d76.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.591ba10e.chunk.js",
+    "static/css/main.c4d6538e.chunk.css",
+    "static/js/main.d12dcc28.chunk.js"
+  ]
+}
