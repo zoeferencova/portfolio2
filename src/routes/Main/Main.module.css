@@ -59,7 +59,7 @@
         grid-row-gap: 0px;
     }
 
-    .images img {
+    .container > * {
         margin: 20px 0px;
     }
 }
@@ -69,7 +69,7 @@
         margin: 25px;
     }
 
-    .images img {
-        margin: 10px 0px;
+    .container > * {
+        margin: 15px 0px;
     }
 }
